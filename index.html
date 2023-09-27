@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <ul class="list">
+    <li class="link"><a href="task1.html">task 1</a></li>
+    <li class="link"><a href="task2.html">task 2</a></li>
+    <li class="link"><a href="task3.html">task 3</a></li>
+    <li class="link"><a href="task4.html">task 4</a></li>
+    <li class="link"><a href="task5.html">task 5</a></li>
+    <li class="link"><a href="task6.html">task 6</a></li>
+    <li class="link"><a href="task7.html">task 7</a></li>
+    <li class="link"><a href="task8.html">task 8</a></li>
+    <li class="link"><a href="task9.html">task 9</a></li>
+    <li class="link"><a href="task10.html">task 10</a></li>
+  </ul>
+
+  <script>
+    const link = document.querySelectorAll(".link");
+    console.dir(link);
+
+    link.forEach((val) => {
+      val.style.backgroundColor = getRandomHexColor();
+      val.style.borderRadius = `15px`;
+      val.style.minWidth = `200px`;
+
+      console.log(val);
+    });
+
+    function getRandomHexColor() {
+      return `#${Math.floor(Math.random() * 16777215)
+        .toString(16)
+        .padStart(6, 0)}`;
+    }
+  </script>
+</body>
+
+
+
+</html>

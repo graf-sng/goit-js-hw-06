@@ -1,0 +1,38 @@
+/*index.html*/
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  color: white;
+  text-align: center;
+}
+.list a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  padding: 40px 50px;
+  font-size: 26px;
+}
+/* task 3 */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+}
+.images {
+  width: 300px;
+}
+/* task 6 */
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
